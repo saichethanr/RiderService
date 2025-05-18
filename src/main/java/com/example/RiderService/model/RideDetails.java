@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="ride-request")
+@Table(name="ride-requests")
 public class RideDetails {
     @Id
     private String userId;
@@ -20,4 +20,5 @@ public class RideDetails {
     private double currentLong;
     private double destLat;
     private double destLong;
+    private int required_seats;
 }
